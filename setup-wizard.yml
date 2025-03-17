@@ -1,0 +1,13 @@
+version: "2"
+fields:
+  - id: UI password
+    target:
+      type: environment
+      name: FTLCONF_webserver_api_password
+      service: pi-hole
+    title: UI password
+    description: >-
+      Set UI password
+    required: true
+    secret: true
+    
