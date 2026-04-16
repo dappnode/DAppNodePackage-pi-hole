@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        - UPSTREAM_VERSION=2025.03.0
+        - UPSTREAM_VERSION=2026.04.0
     image: pi-hole.dnp.dappnode.eth:0.1.0
     ports:
       - "54:53/tcp"

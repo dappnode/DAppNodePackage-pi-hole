@@ -12,5 +12,8 @@
     "linux/amd64",
     "linux/arm64"
   ],
+  "upstreamVersion": "2026.04.0",
+  "upstreamRepo": "pi-hole/docker-pi-hole",
+  "upstreamArg": "UPSTREAM_VERSION",
   "upnpDisable": true
 }
