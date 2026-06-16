@@ -1,16 +1,19 @@
 {
-  "name": "pi-hole.dnp.dappnode.eth",
-  "version": "0.1.0",
-  "description": "Pi-hole network-wide ad blocking solution integrated as a DAppNode package. Blocks ads and trackers at the DNS level for all devices on your network.",
-  "type": "service",
+  "architectures": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "description": "Pi-hole network-wide ad blocking solution integrated as a DAppNode package. Blocks ads and trackers at the DNS level for all devices on your network.",
+  "license": "GPL-3.0",
   "links": {
     "homepage": "https://pi-hole.net"
   },
-  "license": "GPL-3.0",
-  "architectures": ["linux/amd64", "linux/arm64"],
-  "upstreamVersion": "2026.05.0",
-  "upstreamRepo": "pi-hole/docker-pi-hole",
+  "name": "pi-hole.dnp.dappnode.eth",
+  "type": "service",
+  "upnpDisable": true,
   "upstreamArg": "UPSTREAM_VERSION",
-  "upnpDisable": true
+  "upstreamRepo": "pi-hole/docker-pi-hole",
+  "upstreamVersion": "2026.06.0",
+  "version": "0.1.1"
 }
