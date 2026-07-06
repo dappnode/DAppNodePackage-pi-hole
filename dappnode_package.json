@@ -14,6 +14,6 @@
   "upnpDisable": true,
   "upstreamArg": "UPSTREAM_VERSION",
   "upstreamRepo": "pi-hole/docker-pi-hole",
-  "upstreamVersion": "2026.06.0",
-  "version": "0.1.1"
+  "upstreamVersion": "2026.07.0",
+  "version": "0.1.2"
 }
