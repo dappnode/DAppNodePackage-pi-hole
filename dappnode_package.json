@@ -12,8 +12,12 @@
   "name": "pi-hole.dnp.dappnode.eth",
   "type": "service",
   "upnpDisable": true,
-  "upstreamArg": "UPSTREAM_VERSION",
-  "upstreamRepo": "pi-hole/docker-pi-hole",
-  "upstreamVersion": "2026.09.0",
+  "upstream": [
+    {
+      "repo": "pi-hole/docker-pi-hole",
+      "version": "2026.09.0",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
   "version": "0.1.1"
 }
