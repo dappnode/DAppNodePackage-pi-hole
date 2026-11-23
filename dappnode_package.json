@@ -4,6 +4,16 @@
     "linux/arm64"
   ],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "backup": [
+    {
+      "name": "config",
+      "path": "/etc/pihole/pihole.toml"
+    },
+    {
+      "name": "gravity",
+      "path": "/etc/pihole/gravity.db"
+    }
+  ],
   "description": "Pi-hole network-wide ad blocking solution integrated as a DAppNode package. Blocks ads and trackers at the DNS level for all devices on your network.",
   "license": "GPL-3.0",
   "links": {

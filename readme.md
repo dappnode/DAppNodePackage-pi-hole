@@ -52,6 +52,17 @@ You can customize Pi-hole by modifying:
 
 All changes made through the web interface are persisted across package restarts and updates.
 
+## Backup and Restore
+
+The package's Backup tab (and a full DAppNode backup) saves your Pi-hole configuration:
+
+- `/etc/pihole/pihole.toml`: all settings, including upstream DNS servers, local DNS and CNAME records, DHCP settings and static leases, and the web password hash.
+- `/etc/pihole/gravity.db`: blocklists (adlists), allowed and denied domains and regex filters, groups and clients. It also holds the domains downloaded from your blocklists, so blocking works right after a restore without downloading them again.
+
+The query log and long-term statistics (`pihole-FTL.db`) are not included. Restoring a backup restarts Pi-hole, so DNS is unavailable for a few seconds.
+
+The files are copied while Pi-hole is running. A copy taken while Pi-hole is updating its blocklists (weekly, or when you run "Update Gravity") may be incomplete. For an exact copy, stop the package before taking the backup and start it again afterwards.
+
 ## Support
 
 If you have any issues or questions, please reach out to the DAppNode community:
